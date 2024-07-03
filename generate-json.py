@@ -39,7 +39,7 @@ def main():
             symbol_table["functions"][function_name] = {
                 "return type": return_type,
                 "arguments": args,
-                "decsription": description,
+                "description": description,
             }
         elif re.compile(r"[A-Z0-9_]+(\s*|\(.*)").fullmatch(dt.text) and dt.text not in SPECIAL_TYPES: # macro
             words = re.compile(r"\w+").findall(dt.text)
